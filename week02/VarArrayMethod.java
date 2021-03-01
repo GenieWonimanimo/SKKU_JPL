@@ -1,4 +1,4 @@
-package tmpProject;
+package tmpProject; 
 
 public class  VarArrayMethod{
 	// main function에서 호출 될 함수는 static이어야 한다.
