@@ -1,5 +1,3 @@
-package tmpProject; 
-
 public class  VarArrayMethod{
 	// main function에서 호출 될 함수는 static이어야 한다.
 	// static이 아닌 함수를 호출하기 위해서는
