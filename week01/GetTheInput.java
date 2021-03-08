@@ -1,4 +1,3 @@
-package week01;
 import java.util.Scanner;
 
 public class GetTheInput {

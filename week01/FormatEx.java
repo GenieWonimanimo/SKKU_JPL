@@ -1,5 +1,3 @@
-package week01;
-
 public class FormatEx {
 
 	public static void main(String[] args) {
