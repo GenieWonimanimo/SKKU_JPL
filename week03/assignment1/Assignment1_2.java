@@ -15,13 +15,13 @@ public class Assignment1_2 {
 		
 		int payForRegular;
 		int payForExtra;
-		if (hours < 40) {
+		if (hours < 40) { // if hours < 40, we don't need to cal payForExtra
 			payForRegular = pay * hours;
 			payForExtra = 0;
 		}
-		else {
-			payForRegular = pay * 40;
-			payForExtra = pay_extra * (hours - 40);
+		else { // hours >= 40, we have to cal payForExtra
+			payForRegular = pay * 40; // worker can't work more than 40 hours
+			payForExtra = pay_extra * (hours - 40); // extra hours exceed 40 hours are calculated with pay_extra
 		}
 		
 		System.out.println("Payment for regular hours ($): " + payForRegular);

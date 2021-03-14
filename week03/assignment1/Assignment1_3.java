@@ -7,10 +7,10 @@ public class Assignment1_3 {
 		Random randomGen = new Random();
 		int cnt = 0;
 		for (int i = 1; i <= 5; i++) {
-			int randomNum = randomGen.nextInt(10);
+			int randomNum = randomGen.nextInt(10); // generate random number, 0 ~ 9
 			System.out.print("Question " + i + ": Square of " + randomNum + ": ");
-			int ans = input.nextInt();
-			if (ans == randomNum * randomNum)
+			int ans = input.nextInt(); // prompt user to input the correct answer
+			if (ans == randomNum * randomNum) // if user inputted correct answer, count!
 				cnt++;
 		}
 		input.close();
