@@ -13,8 +13,17 @@ public class Assignment1_2 {
 		System.out.print("Number of hours: ");
 		hours = input.nextInt();
 		
-		int payForRegular = pay * (hours / 40 * 40);
-		int payForExtra = pay_extra * (hours % 40);
+		int payForRegular;
+		int payForExtra;
+		if (hours < 40) {
+			payForRegular = pay * hours;
+			payForExtra = 0;
+		}
+		else {
+			payForRegular = pay * 40;
+			payForExtra = pay_extra * (hours - 40);
+		}
+		
 		System.out.println("Payment for regular hours ($): " + payForRegular);
 		System.out.println("Payment for extra hours ($): " + payForExtra);
 		System.out.println("Total payment ($): " + (payForRegular + payForExtra));
