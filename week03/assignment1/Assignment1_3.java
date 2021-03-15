@@ -35,4 +35,4 @@ public class Assignment1_3 {
 			System.out.print("Excellent!");
 		}
 	}
-}
+} 

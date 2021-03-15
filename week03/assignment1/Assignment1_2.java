@@ -30,3 +30,4 @@ public class Assignment1_2 {
 		input.close();
 	}
 }
+ 
